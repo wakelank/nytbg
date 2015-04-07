@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150407172943) do
+ActiveRecord::Schema.define(version: 20150407184139) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,7 +21,12 @@ ActiveRecord::Schema.define(version: 20150407172943) do
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "presentation_id"
+    t.integer  "venue_id"
   end
+
+  add_index "events", ["presentation_id"], name: "index_events_on_presentation_id", using: :btree
+  add_index "events", ["venue_id"], name: "index_events_on_venue_id", using: :btree
 
   create_table "podcasts", force: true do |t|
     t.string   "url"
@@ -29,6 +34,18 @@ ActiveRecord::Schema.define(version: 20150407172943) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "presentations", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "speaker_id"
+    t.integer  "video_id"
+    t.integer  "podcast_id"
+  end
+
+  add_index "presentations", ["podcast_id"], name: "index_presentations_on_podcast_id", using: :btree
+  add_index "presentations", ["speaker_id"], name: "index_presentations_on_speaker_id", using: :btree
+  add_index "presentations", ["video_id"], name: "index_presentations_on_video_id", using: :btree
 
   create_table "presenters", force: true do |t|
     t.string   "name"
