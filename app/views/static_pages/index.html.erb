@@ -6,14 +6,17 @@
 </head>
 <header>
 	<div class="headerPicture"></div>
+	<h3>Learn. Do. Share</h3>
 </header>
 <body>
 	<div class="titleMenu">
 		<div>
-			<i class="fa fa-tachometer"></i>
-			<i class="fa fa-university"></i>
-			<i class="fa fa-users"></i>
-			<i class="fa fa-life-ring"></i>
+			<i class="clickToExpand fa fa-tachometer" data-clicked-class="selectedSubcategory" data-next-class="selectedSubcategory" data-id-to-expand="who"> </i>
+			<i class="clickToExpand fa fa-university" data-clicked-class="selectedSubcategory" data-next-class="selectedSubcategory" data-id-to-expand="events"></i>
+			<i class="clickToExpand fa fa-users" data-clicked-class="selectedSubcategory" data-next-class="selectedSubcategory" data-id-to-expand="community"></i>
+			<i class="clickToExpand fa fa-life-ring" data-clicked-class="selectedSubcategory" data-next-class="selectedSubcategory" data-id-to-expand="contact"></i>
+
+
 		</div>
 		<div>
 			<p>Who We Are</p>
@@ -21,6 +24,26 @@
 			<p>Community</p>
 			<p>Contact</p>
 		</div>
+	</div>
+
+	<div class="hide" id="who">
+				<h4>Dummy Header</h4>
+				<p>Who who who who who</p>
+	</div>
+	<div class="hide" id="events">
+
+				<h4>Dummy Header</h4>
+				<p>events events events</p>
+	</div>
+	<div class="hide" id="community">
+
+				<h4>Dummy Header</h4>
+				<p>community community</p>
+	</div>
+	<div class="hide" id="contact">
+
+				<h4>Dummy Header</h4>
+				<p>contact contact contact</p>
 	</div>
 
 
