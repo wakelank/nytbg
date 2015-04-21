@@ -42,3 +42,6 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 gem "font-awesome-rails"
 
+gem 'meetup_client'
+gem 'pry'
+gem 'httparty'
