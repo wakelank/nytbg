@@ -16,3 +16,4 @@ header h3 {text-align: center}
 .hide.selectedSubcategory {display:block;}
 .hide {display:none; text-align: center}
 
+.getEvents {height:20px; width: 20px; background-color: blue;}

@@ -4,14 +4,13 @@ $(document).ready(function(){
 			nextClass = $(this).attr('data-next-class'),
 			nextElementId = (typeof $(this).attr('data-id-to-expand') !== 'undefined') ? $(this).attr('data-id-to-expand') : null;
 
-		$(".headerPicture").addClass('hide');
+		// $(".headerPicture").addClass('hide');
 
 
 
 			// Remove all classes
 			$("." + thisClass).removeClass(thisClass);
 			$("." + nextClass).removeClass(nextClass);
-
 
 			// Add class to clicked element
 			$(this).addClass(thisClass);
@@ -28,6 +27,29 @@ $(document).ready(function(){
 			}
 
 	});
+
+
+	var getEventData = function(){
+		$.ajax({
+			url: '/events',
+			method: 'GET',
+			dataType: 'json',
+			data: {format: 'json'},
+			success: function(data){
+				showEvents(data);
+			}
+		})
+	};
+
+	var showEvents = function(data){
+		var $data = $(data);
+		console.log(data);
+	};
+
+	$(".getEvents").click(function(){
+		getEventData();
+	})
+
 
 
 
