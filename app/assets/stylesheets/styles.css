@@ -12,8 +12,15 @@ header h3 {text-align: center}
 .titleMenu {text-align: center;}
 .titleMenu > div > i {float:left; font-size: 60px; margin-top: 30px; margin-bottom: 20px; padding-left: 3%; width: 22%;}
 .titleMenu > div > p {float:left; font-size: 20px; margin-top: 15px; padding-left: 3%; width:22%;}
+.titleMenu > div > p > a {color: #000; text-decoration: none;}
 
 .hide.selectedSubcategory {display:block;}
 .hide {display:none; text-align: center}
 
-.getEvents {height:20px; width: 20px; background-color: blue;}
+
+
+/* Contact Page */
+
+form input {line-height: 4; margin: 10px;  width:80%;}
+form textarea {line-height: 8; margin: 10px; width:80%;}
+form button {background-color: #000; border-radius:10px; color: #fff; font-size: 1.2em; height: 30px; text-align: center; width: 30%; }
