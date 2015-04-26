@@ -30,18 +30,26 @@
 				<h4>Dummy Header</h4>
 				<p>
 
-In vitae scelerisque urna, eu molestie neque. Donec tincidunt tempor felis. Vivamus pellentesque consectetur felis, vitae congue turpis cursus placerat. Curabitur sit amet ligula ut nisl luctus volutpat. Mauris eleifend ullamcorper diam a interdum. Curabitur lobortis dictum eros, sit amet feugiat enim ullamcorper et. Nunc fringilla libero in sapien aliquam vehicula. Quisque lacus erat, tristique vitae massa vel, aliquet facilisis est. Mauris pretium nibh id tellus ullamcorper mattis. Suspendisse aliquam porta metus, id congue nisl dignissim et. Nam ut tellus luctus, finibus tellus id, vehicula massa. Sed nec auctor odio. Pellentesque dictum vestibulum sapien at porta. Curabitur fermentum nulla ut nisl consectetur, a scelerisque sem tempor. Ut at quam vel felis hendrerit consequat. In vitae scelerisque urna, eu molestie neque. Donec tincidunt tempor felis. Vivamus pellentesque consectetur felis, vitae congue turpis cursus placerat. Curabitur sit amet ligula ut nisl luctus volutpat. Mauris eleifend ullamcorper diam a interdum. Curabitur lobortis dictum eros, sit amet feugiat enim ullamcorper et. Nunc fringilla libero in sapien aliquam vehicula. Quisque lacus erat, tristique vitae massa vel, aliquet facilisis est. Mauris pretium nibh id tellus ullamcorper mattis. Suspendisse aliquam porta metus, id congue nisl dignissim et. Nam ut tellus luctus, finibus tellus id, vehicula massa. Sed nec auctor odio. Pellentesque dictum vestibulum sapien at porta. Curabitur fermentum nulla ut nisl consectetur, a scelerisque sem tempor. Ut at quam vel felis hendrerit consequat.</p>
+<%= @pastEvents.to_json %></p>
+
 	</div>
 	<div class="hide" id="events">
 
-				<h4>Dummy Header</h4>
-				<p>sque lobortis rutrum. Ut hendrerit finibus sapien sit amet convallis. Fusce in neque imperdiet, egestas urna sed, feugiat mauris. Nulla urna risus, volutpat quis magna a, tincidunt elementum odio. Sed scelerisque suscipit euismod. Duis sit amet libero vitae metus imperdiet congue. Quisque quam nisi, hendrerit sit amet turpis ut, posuere bibendum ligula.
-</p>
+				<h4>Upcoming Events</h4>
+				
+				<p><%= @nextEvent['name'] %></p>
+				<p><%= @nextEvent['venue']['name'] %></p>
+				<p><%= @nextEvent['venue']['address_1'] %> <%= @nextEvent['venue']['city'] %> <%= @nextEvent['venue']['zip'] %></p>
+				<p><%= @nextEvent['venue']['zip'] %></p>
+				
+				
+
+				<p> 
 	</div>
 	<div class="hide" id="community">
 
 				<h4>Dummy Header</h4>
-				<p>on sem. Sed tempus sed augue a eleifend. Nam diam mi, ultrices ac purus non, porttitor sodales lectus. Nunc auctor magna dolor, vel venenatis nunc feugiat a. Donec euismod nunc aliquam, vehicula felis at, efficitur metus. Vestibulum consectetur cursus pretium.In vitae scelerisque urna, eu molestie neque. Donec tincidunt tempor felis. Vivamus pellentesque consectetur felis, vitae congue turpis cursus placerat. Curabitur sit amet ligula ut nisl luctus volutpat. Mauris eleifend ullamcorper diam a interdum. Curabitur lobortis dictum eros, sit amet feugiat enim ullamcorper et. Nunc fringilla libero in sapien aliquam vehicula. Quisque lacus erat, tristique vitae massa vel, aliquet facilisis est. Mauris pretium nibh id tellus ullamcorper mattis. Suspendisse ali</p>
+				<p><%= @firstEvent %></p>
 	</div>
 	<div class="hide" id="contact">
 
